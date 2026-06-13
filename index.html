@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pelisterka — Tulemas peagi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;700&family=Barlow:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Barlow', sans-serif;
+    background: #0f1f1f;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 24px;
+  }
+
+  /* Subtle teal glow behind content */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(31,191,191,0.10) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .logo {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: clamp(56px, 12vw, 120px);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .tagline {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: clamp(12px, 2vw, 16px);
+    font-weight: 300;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: #1fbfbf;
+    margin-bottom: 64px;
+  }
+
+  .divider {
+    width: 1px;
+    height: 60px;
+    background: linear-gradient(to bottom, #1fbfbf, transparent);
+    margin: 0 auto 48px;
+  }
+
+  .message {
+    font-size: clamp(14px, 2vw, 17px);
+    font-weight: 300;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.55);
+    max-width: 380px;
+    margin-bottom: 56px;
+  }
+
+  .message strong {
+    color: rgba(255,255,255,0.85);
+    font-weight: 400;
+  }
+
+  .contact {
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    color: rgba(255,255,255,0.35);
+  }
+
+  .contact a {
+    color: #1fbfbf;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+
+  .contact a:hover { opacity: 0.75; }
+
+  .year {
+    position: fixed;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: rgba(255,255,255,0.15);
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+  <div class="logo">Pelisterka</div>
+  <div class="tagline">aastast 1953 · Mineraalvesi</div>
+
+  <div class="divider"></div>
+
+  <p class="message">
+    Uus veebileht on <strong>tulemas peagi.</strong><br>
+    Põhja-Makedoonia looduslik allikavesi<br>
+    jõuab varsti ka veebi.
+  </p>
+
+  <p class="contact">
+    Küsimused: <a href="mailto:info@lancoster.ee">info@lancoster.ee</a>
+  </p>
+
+  <div class="year">© 2026 Lancoster OÜ</div>
+
+</body>
+</html>
